@@ -37,3 +37,5 @@ const render = (container, template, place) => {
 
 const siteMainElement = document.querySelector(".main");
 const siteHeaderElement = siteMainElement.querySelector(".main__control");
+
+render(siteHeaderElement, createSiteMenuTemplate(), "beforeend");
