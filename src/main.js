@@ -353,6 +353,11 @@ const createTaskTemplate = () => {
     </article>`;
 };
 
+const createLoadMoreButtonTemplate = () => {
+  return `<button class="load-more"
+  type="button">load more</button>`;
+};
+
 const render = (container, template, place) => {
   container.insertAdjacentHTML(place, template);
 };
@@ -364,8 +369,8 @@ render(siteHeaderElement, createSiteMenuTemplate(), "beforeend");
 render(siteMainElement, createFilterTemplate(), "beforeend");
 render(siteMainElement, createBoardTemplate(), "beforeend");
 
-const taskListElement = siteMainElement.querySelector(".board__tasks");
 const boardElement = siteMainElement.querySelector(".board");
+const taskListElement = siteMainElement.querySelector(".board__tasks");
 
 render(taskListElement, createTaskEditTemplate(), "beforeend");
 
