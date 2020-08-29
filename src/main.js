@@ -111,8 +111,10 @@ const render = (container, template, place) => {
 
 const siteMainElement = document.querySelector(".main");
 const siteHeaderElement = siteMainElement.querySelector(".main__control");
-const taskListElement = siteMainElement.querySelector(".board__tasks");
-const boardElement = siteMainElement.querySelector(".board");
 
 render(siteHeaderElement, createSiteMenuTemplate(), "beforeend");
 render(siteMainElement, createFilterTemplate(), "beforeend");
+render(siteMainElement, createBoardTemplate(), "beforeend");
+
+const taskListElement = siteMainElement.querySelector(".board__tasks");
+const boardElement = siteMainElement.querySelector(".board");

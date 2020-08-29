@@ -18,7 +18,8 @@ var render = function render(container, template, place) {
 
 var siteMainElement = document.querySelector(".main");
 var siteHeaderElement = siteMainElement.querySelector(".main__control");
-var taskListElement = siteMainElement.querySelector(".board__tasks");
-var boardElement = siteMainElement.querySelector(".board");
 render(siteHeaderElement, createSiteMenuTemplate(), "beforeend");
 render(siteMainElement, createFilterTemplate(), "beforeend");
+render(siteMainElement, createBoardTemplate(), "beforeend");
+var taskListElement = siteMainElement.querySelector(".board__tasks");
+var boardElement = siteMainElement.querySelector(".board");
