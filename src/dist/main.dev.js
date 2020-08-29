@@ -15,3 +15,4 @@ var render = function render(container, template, place) {
 var siteMainElement = document.querySelector(".main");
 var siteHeaderElement = siteMainElement.querySelector(".main__control");
 render(siteHeaderElement, createSiteMenuTemplate(), "beforeend");
+render(siteMainElement, createFilterTemplate(), "beforeend");

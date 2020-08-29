@@ -101,3 +101,4 @@ const siteMainElement = document.querySelector(".main");
 const siteHeaderElement = siteMainElement.querySelector(".main__control");
 
 render(siteHeaderElement, createSiteMenuTemplate(), "beforeend");
+render(siteMainElement, createFilterTemplate(), "beforeend");
