@@ -7,3 +7,6 @@ var createSiteMenuTemplate = function createSiteMenuTemplate() {
 var render = function render(container, template, place) {
   container.insertAdjacentHTML(place, template);
 };
+
+var siteMainElement = document.querySelector(".main");
+var siteHeaderElement = siteMainElement.querySelector(".main__control");
