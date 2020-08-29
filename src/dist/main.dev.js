@@ -27,3 +27,4 @@ render(siteMainElement, createFilterTemplate(), "beforeend");
 render(siteMainElement, createBoardTemplate(), "beforeend");
 var taskListElement = siteMainElement.querySelector(".board__tasks");
 var boardElement = siteMainElement.querySelector(".board");
+render(taskListElement, createTaskEditTemplate(), "beforeend");

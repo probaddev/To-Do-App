@@ -318,3 +318,5 @@ render(siteMainElement, createBoardTemplate(), "beforeend");
 
 const taskListElement = siteMainElement.querySelector(".board__tasks");
 const boardElement = siteMainElement.querySelector(".board");
+
+render(taskListElement, createTaskEditTemplate(), "beforeend");
