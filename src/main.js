@@ -1,5 +1,7 @@
 "use strict";
 
+const TASK_COUNT = 3;
+
 const createSiteMenuTemplate = () => {
   return `<section class="control__btn-wrap">
       <input
@@ -366,3 +368,7 @@ const taskListElement = siteMainElement.querySelector(".board__tasks");
 const boardElement = siteMainElement.querySelector(".board");
 
 render(taskListElement, createTaskEditTemplate(), "beforeend");
+
+for (let i = 0; i < TASK_COUNT; i++) {
+  render(taskListElement, createTaskTemplate(), "beforeend");
+}
