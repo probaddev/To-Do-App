@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "npm run eslint",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
   },
   "author": "ProBadDev",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "eslint": "^7.7.0",
     "eslint-config-htmlacademy": "^0.5.2",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
