@@ -42,3 +42,5 @@ render(taskListElement, createTaskEditTemplate(), "beforeend");
 for (var i = 0; i < TASK_COUNT; i++) {
   render(taskListElement, createTaskTemplate(), "beforeend");
 }
+
+render(boardElement, createLoadMoreButtonTemplate(), "beforeend");
