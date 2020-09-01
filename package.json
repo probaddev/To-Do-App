@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run eslint",
     "build": "webpack",
-    "start": "run webpack-dev-server"
+    "start": "webpack-dev-server --open"
   },
   "author": "ProBadDev",
   "license": "ISC",
