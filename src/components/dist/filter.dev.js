@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.createFilterTemplate = void 0;
 
 var createFilterMarkup = function createFilterMarkup(name, count) {
-  return "<input\n        type=\"radio\"\n        id=\"filter__all\"\n        class=\"filter__input visually-hidden\"\n        name=\"filter\"\n        checked\n      />\n      <label for=\"filter__all\" class=\"filter__label\">\n      ".concat(name, "\n      <span class=\"filter__all-count\">").concat(count, "</span></label\n      >");
+  return "<input\n        type=\"radio\"\n        id=\"filter__".concat(name, "\"\n        class=\"filter__input visually-hidden\"\n        name=\"filter\"\n        checked\n      />\n      <label for=\"filter__").concat(name, "\" class=\"filter__label\">\n      ").concat(name, "\n      <span class=\"filter__").concat(name, "-count\">").concat(count, "</span></label\n      >");
 };
 
 var createFilterTemplate = function createFilterTemplate() {
