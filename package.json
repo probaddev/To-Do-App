@@ -5,7 +5,8 @@
   "main": "bundle.js",
   "scripts": {
     "test": "npm run eslint",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "run webpack-dev-server"
   },
   "author": "ProBadDev",
   "license": "ISC",
