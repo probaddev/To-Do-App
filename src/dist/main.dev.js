@@ -13,6 +13,7 @@ render(siteMainElement, createFilterTemplate(), "beforeend");
 render(siteMainElement, createBoardTemplate(), "beforeend");
 var boardElement = siteMainElement.querySelector(".board");
 var taskListElement = siteMainElement.querySelector(".board__tasks");
+render(boardElement, createSortingTemplate(), "afterbegin");
 render(taskListElement, createTaskEditTemplate(), "beforeend");
 
 for (var i = 0; i < TASK_COUNT; i++) {
