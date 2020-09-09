@@ -11,7 +11,26 @@ var createFilterMarkup = function createFilterMarkup(name, count) {
 
 var createFilterTemplate = function createFilterTemplate() {
   var filterMarkup = createFilterMarkup("nameFilter", 0);
-  return "<section class=\"main__filter filter container\">\n      ".concat(filterMarkup, "\n      ").concat(filterMarkup, "\n      ").concat(filterMarkup, "\n      ").concat(filterMarkup, "\n      ").concat(filterMarkup, "\n      ").concat(filterMarkup, "\n\n    </section>");
+  var filtersMarkup = [{
+    name: "all",
+    count: 18
+  }, {
+    name: "overdue",
+    count: 18
+  }, {
+    name: "today",
+    count: 18
+  }, {
+    name: "favourites",
+    count: 18
+  }, {
+    name: "repeating",
+    count: 18
+  }, {
+    name: "archive",
+    count: 18
+  }];
+  return "<section class=\"main__filter filter container\">\n          ".concat(filterMarkup, "\n          </section>");
 };
 
 exports.createFilterTemplate = createFilterTemplate;

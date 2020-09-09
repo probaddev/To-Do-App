@@ -10,6 +10,7 @@ Thumbs.db
 # Вспомогательные файлы
 *.log*
 node_modules/
+draft.js
 
 # Папка с собранными файлами проекта
 markup/
