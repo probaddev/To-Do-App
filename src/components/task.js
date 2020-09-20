@@ -1,17 +1,13 @@
 export const createTaskTemplate = (task) => {
-  const {} = task;
+  const {description, dueDate, color, repeatingDays, isArchive, isFavorite} = task;
 
-  const color = "black";
-  const description = "Example default task with default color";
   const date = "23 september";
   const time = "16:15";
-  const isArchive = true;
-  const isFavourite = false;
 
   const repeatClass = "card--repeat";
   const deadlineClass = "card--deadline";
   const archiveButtonInactiveClass = isArchive ? "" : "card__btn--disabled";
-  const favouriteButtonInactiveClass = isFavourite ? "" : "card__btn--disabled";
+  const favouriteButtonInactiveClass = isFavorite ? "" : "card__btn--disabled";
 
   return `<article class="card card--${color}${repeatClass}${deadlineClass}">
       <div class="card__form">
