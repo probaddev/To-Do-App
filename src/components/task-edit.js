@@ -1,6 +1,15 @@
 export const createTaskEditTemplate = (task) => {
   const {} = task;
-  return `<article class="card card--edit card--yellow card--repeat">
+
+  const color = "black";
+  const description = "Example default task with default color";
+  const date = "23 september";
+  const time = "16:15";
+
+  const repeatClass = "card--repeat";
+  const deadlineClass = "card--deadline";
+
+  return `<article class="card card--edit card--${color} ${repeatClass} ${deadlineClass}">
       <form class="card__form" method="get">
         <div class="card__inner">
           <div class="card__color-bar">
@@ -15,7 +24,7 @@ export const createTaskEditTemplate = (task) => {
                 class="card__text"
                 placeholder="Start typing your text here..."
                 name="text"
-              >Here is a card with filled data</textarea>
+              >${description}</textarea>
             </label>
           </div>
 
@@ -33,7 +42,7 @@ export const createTaskEditTemplate = (task) => {
                       type="text"
                       placeholder=""
                       name="date"
-                      value="23 September 16:15"
+                      value="${date} ${time}"
                     />
                   </label>
                 </fieldset>
